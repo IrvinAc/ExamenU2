@@ -29,7 +29,7 @@ public class PC {
     public void encender (int ent, String disk){
         System.out.println("La pc enciende en " + ent + "min, por el disco " + disk + " que tiene");
     }
-    public void espacio (int espacio){
+    public void espacio (double espacio){
         if (espacio>=1000){
             double TB=espacio/1000;
             System.out.println("La pc tiene " + TB + "Tb de espacio ");
@@ -38,8 +38,16 @@ public class PC {
     }
     public void espacio (int espacio, int part ){
         System.out.println("El disco tiene una particion de " + part+ "GB ");
-        int espct=espacio-part;
-        System.out.println("El espacio libre sin tomar la particion es de " +espct+ "GB");
+        double espct=espacio-part;
+        if (espct>=1000){
+            
+        double l=espct/1000;    
+        System.out.println("El espacio libre sin tomar la particion es de " +l+ "TB");
+        }else{
+            System.out.println("El espacio libre sin tomar la particion es de " +espct+ "GB");
+                    
+        }
+            
     }
     
    

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package examen.unidad.pkg2;
-
+//Irvin Isaac Acosta Romo 
 /**
  *
  * @author Irvin
@@ -38,22 +38,13 @@ public class ExamenUnidad2 {
        tercera.encender();
        tercera.encender(4);
        tercera.encender(4, "HDD");
-       tercera.espacio(1000);
-       tercera.espacio(1000, 500);
+       tercera.espacio(1500);
+       tercera.espacio(1500, 500);
        Grafica Graf3=new Grafica ("Gtx 1050", 2);
        Graf3.marca="Gigabyte";
        Graf3.getmarca();
        System.out.println("La grafica es de la marca " + Graf3.getmarca());
        System.out.println("");
-        
-                
-        
-       
-       
-        
-        
-        
-    
         // TODO code application logic here
     }
     
