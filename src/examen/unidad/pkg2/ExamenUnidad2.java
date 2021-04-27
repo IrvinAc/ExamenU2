@@ -16,18 +16,18 @@ public class ExamenUnidad2 {
      */
     public static void main(String[] args) {
         PC Primera =new PC("I7 6670","SSD", 16);
-        Primera.encender();
-        Primera.espacio(500);
+        Primera.getencender();
+        Primera.getespacio(500);
         Grafica primgraf = new Grafica("Rtx 2060", 6);
         primgraf.marca="MSI";
         System.out.println("La grafica es de la marca " + primgraf.getmarca());
         System.out.println("");
         
         PC segunda =new PC("Ryzen 3 3200g", "HDD", 8);
-        segunda.encender();
-        segunda.encender(4);
-        segunda.encender(4, "HDD");
-        segunda.espacio(1000);
+        segunda.getencender();
+        segunda.getencender(4);
+        segunda.getencender(4, "HDD");
+        segunda.getespacio(1000);
         Grafica Graf2=new Grafica ("Gtx 1660", 6);
         Graf2.marca="Asus";
         Graf2.getmarca();
@@ -35,11 +35,11 @@ public class ExamenUnidad2 {
         System.out.println("");
         
         PC tercera=new PC("I5 4590","HDD", 12);
-       tercera.encender();
-       tercera.encender(4);
-       tercera.encender(4, "HDD");
-       tercera.espacio(1500);
-       tercera.espacio(1500, 500);
+       tercera.getencender();
+       tercera.getencender(4);
+       tercera.getencender(4, "HDD");
+       tercera.getespacio(1500);
+       tercera.getespacio(1500, 500);
        Grafica Graf3=new Grafica ("Gtx 1050", 2);
        Graf3.marca="Gigabyte";
        Graf3.getmarca();
