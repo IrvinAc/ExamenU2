@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  * @author Irvin
  */
 public class PC {
-    public String ProcMarc, disk, Prox ;
+    public String ProcMarc, disk ;
     public int ram ;
     public PC(String ProcMarc, String disk, int ram) {
         this.ProcMarc=ProcMarc;

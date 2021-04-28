@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  * @author Irvin
  */
 public class ExamenUnidad2 {
-
+//Examen unidad 2 
     /**
      * @param args the command line arguments
      */
