@@ -5,6 +5,8 @@
  */
 package examen.unidad.pkg2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Irvin
@@ -16,36 +18,34 @@ public class PC {
         this.ProcMarc=ProcMarc;
         this.ram=ram;
         this.disk=disk;
-        System.out.println("La pc tiene un procesador " + ProcMarc);
-        System.out.println("Tiene " + ram + "gb de ram");
-        System.out.println("Tiene un disco " + disk );
+        JOptionPane.showMessageDialog(null, "La  pc tiene un procesador " + ProcMarc + "\n"
+                + "Tiene " + ram + "Gb de ram \n"
+                        + "Tiene un Disco " + disk );
 }
     public void encender (){
-        System.out.println("Enciendes la pc");
+        JOptionPane.showMessageDialog(null, "Enciende la PC");
     }
     public void encender (int ent){
-        System.out.println("La pc tarda en encender " + ent + "min.");
+        JOptionPane.showMessageDialog(null , "la PC tarda en encender " + ent + "min." );
     }
     public void encender (int ent, String disk){
-        System.out.println("La pc enciende en " + ent + "min, por el disco " + disk + " que tiene");
+        JOptionPane.showMessageDialog(null, "La PC enciende en " + ent + "min, por el disco ya que este es un " + disk );
     }
     public void espacio (double espacio){
         if (espacio>=1000){
             double TB=espacio/1000;
-            System.out.println("La pc tiene " + TB + "Tb de espacio ");
+            JOptionPane.showMessageDialog(null,"La PC tiene " + TB + "TB de espacio");
         }else
-        System.out.println("la pc tiene " + espacio + "GB de espacio");
+            JOptionPane.showMessageDialog(null, "La PC tiene " + espacio + "GB de espacio ");
     }
     public void espacio (int espacio, int part ){
-        System.out.println("El disco tiene una particion de " + part+ "GB ");
+        JOptionPane.showMessageDialog(null, "El disco tiene una particion de " + part + "GB");
         double espct=espacio-part;
         if (espct>=1000){
-            
         double l=espct/1000;    
-        System.out.println("El espacio libre sin tomar la particion es de " +l+ "TB");
+        JOptionPane.showMessageDialog(null, "El espacio libre sin tomar la particion es de " +l +"TB");
         }else{
-            System.out.println("El espacio libre sin tomar la particion es de " +espct+ "GB");
-                    
+            JOptionPane.showMessageDialog(null, "El espacio libre sin tomar la particion es de " +espct +"GB");                    
         }
             
     }

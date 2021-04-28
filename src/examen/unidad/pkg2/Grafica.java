@@ -5,6 +5,8 @@
  */
 package examen.unidad.pkg2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Irvin
@@ -16,8 +18,8 @@ public class Grafica {
     public Grafica(String TipoGraf, int Vram){
         this.TipoGraf=TipoGraf;
         this.Vram=Vram;
-        System.out.println("La tarjeta grafica del PC es una " + TipoGraf+ "\n"
-                + "Tiene " + Vram +"GB de Vram" );
+        JOptionPane.showMessageDialog(null, "La tarjeta grafica del PC es una " +TipoGraf +"\n"
+        + "Esta tiene " + Vram +"GB de Vram");
     }public String getmarca(){
         return marca;
     }
