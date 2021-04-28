@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  * @author Irvin
  */
 public class PC {
-    public String ProcMarc, disk ;
+    public String ProcMarc, disk, Prox ;
     public int ram ;
     public PC(String ProcMarc, String disk, int ram) {
         this.ProcMarc=ProcMarc;
@@ -22,6 +22,10 @@ public class PC {
                 + "Tiene " + ram + "Gb de ram \n"
                         + "Tiene un Disco " + disk );
 }
+    public PC (String ProcMarc){
+        JOptionPane.showMessageDialog(null, "Esta PC solo cuanta con un Procesador " +ProcMarc + "\n"
+                + "Le faltan los demas componentes" );
+    }
     public void encender (){
         JOptionPane.showMessageDialog(null, "Enciende la PC");
     }
